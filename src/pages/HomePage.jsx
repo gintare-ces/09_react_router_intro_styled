@@ -6,8 +6,8 @@ import React from 'react'
 
 function HomePage() {
   return (
-    <div>
-        <h1>Title </h1>
+    <div className='container'>
+        <h1>Home page </h1>
         <p>Welcome to Home Page</p>
     </div>
   )
