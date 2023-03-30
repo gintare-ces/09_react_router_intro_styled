@@ -1,10 +1,11 @@
 import './styles/reset.css';
 import './styles/App.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <div className='container'>
-      <h1>New project</h1>
+      <HomePage />
     </div>
   );
 }
