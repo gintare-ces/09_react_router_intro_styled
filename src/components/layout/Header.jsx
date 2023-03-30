@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
@@ -14,14 +14,25 @@ const Nav = styled.nav`
     }
     
 `
+const SiteLink = styled(NavLink)`
+  display: block;
+  padding: 0.5em 1em;
+  background-color: #333;
 
+  &:hover {
+    background-color: #aeaeae;
+  }
+  &.active {
+    background-color: tomato;
+  }
+`
 function Header() {
   return (
     <header className='container'>
         <Nav>
-            <Link to="/" className="navLink">Home</Link>
-            <Link to="/about" className="navLink">About</Link>
-            <Link to="/contacts" className="navLink">Contacts</Link>
+            <SiteLink to="/" className="navLink">Home</SiteLink>
+            <SiteLink to="/about" className="navLink">About</SiteLink>
+            <SiteLink to="/contacts" className="navLink">Contacts</SiteLink>
         </Nav>
     </header>
   )

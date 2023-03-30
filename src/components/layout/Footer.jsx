@@ -22,7 +22,7 @@ function Footer() {
   return (
     <div className="container">
      <Foot>
-        <p>&copy; {formatedDate} Made with  ❤️ </p>
+        &copy; {formatedDate} Made with  ❤️ 
      </Foot>
     </div>
   )
