@@ -11,3 +11,7 @@ https://reactrouter.com/en/main/start/examples - docs
 
 # Eslint
 1.  npm init @eslint/config
+
+## Styled
+
+1. npm i styled-components
